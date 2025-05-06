@@ -95,11 +95,12 @@
 .store-buttons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
+  margin-top: 1rem;
 }
 
 .store-button img {
-  height: 50px;
+  height: 80px;
   transition: transform 0.3s ease;
 }
 
@@ -112,9 +113,13 @@
     padding: 60px 1rem;
   }
   
+  .store-button img {
+    height: 60px;
+  }
+  
   .store-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
