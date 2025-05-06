@@ -29,8 +29,9 @@ export class NavbarComponent {
     const featuresSection = document.getElementById('features');
     const communitySection = document.getElementById('community');
     const aboutSection = document.getElementById('about');
+    const downloadSection = document.getElementById('download');
     
-    if (!homeSection || !featuresSection || !communitySection || !aboutSection) return;
+    if (!homeSection || !featuresSection || !communitySection || !aboutSection || !downloadSection) return;
 
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     
@@ -40,8 +41,10 @@ export class NavbarComponent {
       this.scrollService.setCurrentSection('features');
     } else if (scrollPosition < aboutSection.offsetTop) {
       this.scrollService.setCurrentSection('community');
-    } else {
+    } else if (scrollPosition < downloadSection.offsetTop) {
       this.scrollService.setCurrentSection('about');
+    } else {
+      this.scrollService.setCurrentSection('download')
     }
   }
 

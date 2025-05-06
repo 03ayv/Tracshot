@@ -1,1 +1,31 @@
-<p>download works!</p>
+<section class="download-section">
+  <div class="download-header">
+    <h1>Download TracShot</h1>
+    <p class="subtitle">Choose the plan that fits your needs</p>
+  </div>
+
+  <div class="plans-container">
+    <div class="plan-card" *ngFor="let plan of plans">
+      <h2>{{ plan.name }}</h2>
+      <div class="price">{{ plan.price }}</div>
+      <ul class="features-list">
+        <li *ngFor="let feature of plan.features">
+          ✓ {{ feature }}
+        </li>
+      </ul>
+      <button class="download-button">Get Started</button>
+    </div>
+  </div>
+
+  <div class="app-stores">
+    <h3>Download Now</h3>
+    <div class="store-buttons">
+      <a href="#" class="store-button google-play">
+        <img src="assets/google-play-badge.png" alt="Get it on Google Play">
+      </a>
+      <a href="#" class="store-button app-store">
+        <img src="assets/app-store-badge.png" alt="Download on the App Store">
+      </a>
+    </div>
+  </div>
+</section>
