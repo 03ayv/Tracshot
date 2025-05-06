@@ -23,15 +23,18 @@ export class NavbarComponent {
   onScroll() {
     const homeSection = document.getElementById('home');
     const featuresSection = document.getElementById('features');
+    const communitySection = document.getElementById('community');
     
-    if (!homeSection || !featuresSection) return;
+    if (!homeSection || !featuresSection || !communitySection) return;
 
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     
     if (scrollPosition < featuresSection.offsetTop) {
       this.scrollService.setCurrentSection('home');
-    } else {
+    } else if (scrollPosition < communitySection.offsetTop) {
       this.scrollService.setCurrentSection('features');
+    } else {
+      this.scrollService.setCurrentSection('community');
     }
   }
 
