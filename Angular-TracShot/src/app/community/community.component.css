@@ -1,80 +1,93 @@
 .community-section {
-  padding: 80px 5% 80px;
+  padding: 40px 5% 80px;
   background-color: white;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .community-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .community-header h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #4a4a4a;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .community-content {
   display: flex;
-  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   align-items: center;
-  padding: 2rem 0;
 }
 
-.content-wrapper {
-  max-width: 800px;
-  text-align: center;
-  padding: 2rem;
+.content-left {
+  flex: 1;
 }
 
-.chat-icon {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  background-color: rgba(138, 43, 226, 0.1);
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 auto 2rem;
+.content-left h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #1a1a1a;
 }
 
 .description {
-  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   line-height: 1.6;
+  margin-bottom: 2rem;
   color: #4a4a4a;
-  margin-bottom: 3rem;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.earth-image {
+  width: 100%;
+  max-width: 500px;
 }
 
 .join-button {
-  background-color: white;
-  border: rgb(255, 0, 0) solid 2px;
-  padding: 1rem 3rem;
+  background-color: #D84040;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
   border-radius: 25px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
-  position: relative;
-  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .community-section {
-    padding: 100px 1rem 60px;
+.join-button:hover {
+  background-color: #c23030;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+  .community-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
   }
   
-  .content-wrapper {
-    padding: 1rem;
+  .content-left {
+    padding: 0 1rem;
+  }
+  
+  .earth-image {
+    max-width: 80%;
   }
 }
