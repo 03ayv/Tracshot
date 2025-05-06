@@ -3,10 +3,10 @@
     <!-- Logo will go here -->
   </div>
   <div class="nav-links">
-    <a routerLink="/">Home</a>
-    <a routerLink="/features">Features</a>
-    <a routerLink="/pricing">Community</a>
-    <a routerLink="/about">About Us</a>
-    <a routerLink="/about">Download</a>
+    <a (click)="scrollToSection('home')" [class.active]="currentSection === 'home'">Home</a>
+    <a (click)="scrollToSection('features')" [class.active]="currentSection === 'features'">Features</a>
+    <a>Community</a>
+    <a>About Us</a>
+    <a>Download</a>
   </div>
 </nav>
