@@ -1,0 +1,14 @@
+<section class="features-section">
+  <div class="features-header">
+    <h1>Features</h1>
+    <p class="subtitle">Discover what makes TracShot your ultimate shooting companion</p>
+  </div>
+  
+  <div class="features-grid">
+    <div class="feature-card" *ngFor="let feature of features">
+      <div class="feature-icon">{{ feature.icon }}</div>
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.description }}</p>
+    </div>
+  </div>
+</section>
