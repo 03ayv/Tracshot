@@ -1,6 +1,6 @@
 .features-section {
   padding: 80px 5% 80px;
-  background-color: white;
+  background-color: black;
   min-height: 100vh;
 }
 
@@ -12,13 +12,13 @@
 .features-header h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
-  color: #1a1a1a;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: clamp(1rem, 3vw, 1.2rem);
-  color: #4a4a4a;
+  color: lightgray;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -31,12 +31,12 @@
 }
 
 .feature-card {
-  background: white;
+  background: rgb(86, 86, 86);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px gray(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #f0f0f0;
+  border: 1px solid gray;
 }
 
 .feature-card:hover {
@@ -52,12 +52,12 @@
 .feature-card h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .feature-card p {
-  color: #4a4a4a;
+  color: white;
   line-height: 1.6;
 }
 

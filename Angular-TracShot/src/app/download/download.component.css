@@ -1,6 +1,5 @@
 .download-section {
   padding: 50px 5% 80px;
-  background-color: white;
   min-height: 100vh;
 }
 
@@ -12,13 +11,11 @@
 .download-header h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
-  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
-  color: #4a4a4a;
 }
 
 .plans-container {

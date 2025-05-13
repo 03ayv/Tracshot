@@ -1,14 +1,14 @@
 .navbar {
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: white;
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(130, 130, 130);
   z-index: 1000;
 }
 
@@ -18,13 +18,14 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-left: 60px;
 }
 
 .logo {
   height: 400%;
   width: auto;
   object-fit: cover;
-  margin-top: -5px;
+  margin-top: 15px;
 }
 
 .nav-links {
@@ -34,7 +35,7 @@
 }
 
 .nav-links a {
-  color: #1a1a1a;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -43,7 +44,7 @@
 }
 
 .nav-links a:hover {
-  color: #4a4a4a;
+  color: lightgray;
 }
 
 .nav-links a.active {
