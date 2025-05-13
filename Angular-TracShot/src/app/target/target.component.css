@@ -2,6 +2,7 @@
     position: relative;
     width: 300px;
     height: 300px;
+    margin-top: -5vh;
   }
   
   .ring {
