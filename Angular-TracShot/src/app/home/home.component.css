@@ -13,29 +13,32 @@
 
 .hero-content {
   width: 100%;
-  max-width: 800px;
+  max-width: 1500px;
   text-align: center;
   color: white;
   padding: 4rem 1rem;
-  margin-top: 10vh;
+  margin-top: 1rem;
 }
 
-h1, h2, p {
-  font-family: 'Inter', sans-serif;
+h1, h2 {
   color: white;
 }
 
 h1 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: 6.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  word-spacing: 10px;
+  color: #d63232;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  line-height: 1.2;
-  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-weight: 500;
+  margin-top: -1rem;
 }
 
 /*
@@ -49,6 +52,7 @@ p {
   font-weight: 400;
 }
 */
+
 @media (max-width: 768px) {
   .hero-content {
     padding: 2rem 1rem;
@@ -59,13 +63,18 @@ p {
   }
 }
 
+.target-container{
+  margin-top: 9rem;
+}
+
 .target-instruction {
-  font-size: 1.2rem;
-  color: white;
-  margin-top: -3rem;
-  margin-bottom: 4rem;
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 3rem;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
 }
 
 .target {
