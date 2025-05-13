@@ -1,0 +1,66 @@
+.footer {
+    background-color: black;
+    padding: 2rem;
+    border-top: 1px solid rgb(130, 130, 130);
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #D84040;
+  }
+  
+  .legal-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .legal-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .legal-links a:hover {
+    color: #D84040;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-bottom p {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .social-links,
+    .legal-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
