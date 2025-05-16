@@ -16,7 +16,7 @@
   max-width: 1500px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: 
     "text target";
   gap: 4rem;
@@ -28,12 +28,13 @@
   grid-area: text;
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
+  margin-top: -2rem;
 }
 
 h1 {
   font-size: clamp(4rem, 6vw, 7rem);
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 900;
   word-spacing: 10px;
   color: #d63232;
   opacity: 0;
@@ -46,12 +47,7 @@ h1 {
 
 h1 em {
   font-style: italic;
-  font-weight: 900;
   color: white;
-}
-
-h1 em em {
-  color:#d63232;
 }
 
 h2 {
@@ -82,7 +78,7 @@ h2 {
   font-size: 1rem;
   color: gray;
   margin-bottom: 4rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -176,4 +172,5 @@ h2 {
   width: 100%;
   height: 600px;
   object-fit: cover;
+  filter: brightness(0.8) saturate(0.8) contrast(0.9);
 }

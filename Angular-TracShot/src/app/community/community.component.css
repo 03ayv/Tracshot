@@ -20,8 +20,11 @@
 }
 
 .subtitle {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  color: gray;
+  font-size: clamp(1rem, 3vw, 1rem);
+  letter-spacing: 1px;
+  color: lightgray;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .community-content {

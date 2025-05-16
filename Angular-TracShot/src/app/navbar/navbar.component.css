@@ -11,7 +11,6 @@
   align-items: center;
   padding: 0 2rem;
   z-index: 1000;
-  border-bottom: 1px solid #D84040;
 }
 
 .logo-space {
@@ -41,7 +40,7 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: color 0.2s ease;
   cursor: pointer;
 }
