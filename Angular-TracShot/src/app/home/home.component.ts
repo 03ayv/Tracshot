@@ -9,15 +9,17 @@ import { TargetComponent } from "../target/target.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
   @ViewChild('targetContainer') targetContainer!: ElementRef;
   private isScrolling = false;
   private lastScrollPosition = 0;
 
+  /*
   ngAfterViewInit() {
     // Initial check for target position
     this.checkTargetPosition();
   }
+    */
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
@@ -53,7 +55,7 @@ export class HomeComponent implements AfterViewInit {
 
       setTimeout(() => {
         this.isScrolling = false;
-      }, 10000);
+      }, 1000);
     }
   }
 }

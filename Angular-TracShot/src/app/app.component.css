@@ -1,0 +1,9 @@
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#home {
+  min-height: 100vh;
+  position: relative;
+}
