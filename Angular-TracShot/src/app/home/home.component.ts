@@ -37,13 +37,14 @@ export class HomeComponent implements AfterViewInit {
     const targetElement = this.targetContainer.nativeElement;
     const rect = targetElement.getBoundingClientRect();
     const windowHeight = window.innerHeight;
+    const targetHeight = targetElement.offsetHeight;
     
-    // If target is partially visible or just below viewport
-    if (rect.top > windowHeight * 0.3 && rect.top < windowHeight * 1.5) {
+    // Check if target is approximately half visible on screen
+    if (rect.top < windowHeight * 0.75 && rect.top > windowHeight * 0.25) {
       this.isScrolling = true;
       
       // Calculate position to center the target
-      const targetCenter = targetElement.offsetTop - (windowHeight - targetElement.offsetHeight + 65) / 2;
+      const targetCenter = targetElement.offsetTop - (windowHeight - targetHeight + 65) / 2;
       
       window.scrollTo({
         top: targetCenter,
@@ -52,7 +53,7 @@ export class HomeComponent implements AfterViewInit {
 
       setTimeout(() => {
         this.isScrolling = false;
-      }, 1000);
+      }, 10000);
     }
   }
 }
